@@ -1,6 +1,6 @@
 #ifndef HEADER_H
 #define HEADER_H
-
+#endif
 
 #include <iostream>
 #include <string>
@@ -9,22 +9,8 @@
 
 using namespace std;
 
-// Constructor
-BinaryTree::BinaryTree() : root(nullptr) {}
 
-// Destructor
-BinaryTree::~BinaryTree() {
-    destroyTree(root);
-}
-
-struct Node {
-    int data;
-    Node* left;
-    Node* right;
-    Node* parent;
-
-    Node(int val) : data(val), left(nullptr), right(nullptr) {}
-};
+struct Node;
 
 class BinaryTree {
 public:
@@ -40,4 +26,15 @@ private:
     void destroyTree(Node* node); 
 };
 
-#endif
+
+struct Node {
+    int data;
+    Node* left;
+    Node* right;
+    Node* parent;
+
+    Node(int val) : data(val), left(nullptr), right(nullptr) {}
+};
+
+
+

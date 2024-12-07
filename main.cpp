@@ -13,7 +13,14 @@ using namespace std;
 
 int main() {
 
-  
-  
-  return 0;
+    BinaryTree tree;
+    tree.insert(10);
+    tree.insert(5);
+    tree.insert(15);
+    tree.insert(20);
+
+    Node* rightChild = tree.moveToRightChild(tree.root);
+    tree.printNodeInfo(rightChild);
+
+    return 0;
 }
