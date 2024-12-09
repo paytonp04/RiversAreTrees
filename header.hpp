@@ -6,8 +6,8 @@ Programming Assignment: Project 2
 Description: 
 */
 
-#ifndef LINKED_LIST_HPP
-#define LINKED_LIST_HPP
+#ifndef HEADER_HPP
+#define HEADER_HPP
 #endif
 
 #include <iostream>
