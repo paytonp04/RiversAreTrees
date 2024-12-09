@@ -1,10 +1,9 @@
 /*
 Name: Group 13
 Class: CPSC223, Fall 2024
-Date: September 8, 2024
-Programming Assignment: Project 1
-Description: This is the header file that defines the linked list class and node struct
-as well as houses the signatures for standard functions
+Date: December 8, 2024
+Programming Assignment: Project 2
+Description: 
 */
 
 #ifndef LINKED_LIST_HPP
