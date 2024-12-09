@@ -62,6 +62,25 @@ struct TreeNode {
     }
 };
 
+// Function to move to the right child of the current node
+TreeNode* moveToRightChild(TreeNode* current) {
+  // Check if the current node is not null
+  if (current) {
+    // Check if the current node has a right child
+    if (current->right) {
+      // Move to the right child and return the node
+      return current->right;
+    } else {
+      // Print a message if there is no right child
+      cout << "No right child exists for the current node.\n";
+      return nullptr;
+    }
+  } else {
+    // Print a message if the current node is null
+    cout << "Current node is null, cannot move to right child.\n";
+    return nullptr;
+  }
+}
 
 // Inserts a new node into the binary tree based on the parent water body
 TreeNode* insertNode(TreeNode* root, const string& parent, 
