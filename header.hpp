@@ -8,7 +8,6 @@ Description:
 
 #ifndef HEADER_HPP
 #define HEADER_HPP
-#endif
 
 #include <iostream>
 #include <string>
@@ -43,10 +42,11 @@ struct TreeNode {
     vector<Dam> dams;     // Vector to store dams associated with this water body
     TreeNode* left;            // Pointer to the left child node
     TreeNode* right;           // Pointer to the right child node
+    TreeNode* parent;          // Pointer to the parent node
 
     // Constructor to initialize a tree node
     TreeNode(const string& n, const string& t, const float& f) 
-        : name(n), type(t), flowRate(f), left(nullptr), right(nullptr) {}
+        : name(n), type(t), flowRate(f), left(nullptr), right(nullptr), parent(nullptr) {}
 
     // Adds a dam to the vector of dams
     void addDam(const Dam& dam) {
@@ -92,6 +92,7 @@ void printNode(TreeNode* node) {
     // Print a message if the node is null
     cout << "Node is null. No information to display.\n";
   }
+}
 
 // Inserts a new node into the binary tree based on the parent water body
 TreeNode* insertNode(TreeNode* root, const string& parent, 
@@ -119,3 +120,5 @@ TreeNode* insertNode(TreeNode* root, const string& parent,
 
     return root; // Return the root of the updated tree
 }
+
+#endif // HEADER_HPP
