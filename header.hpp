@@ -82,6 +82,17 @@ TreeNode* moveToRightChild(TreeNode* current) {
   }
 }
 
+// Function to print the information of a given node
+void printNode(TreeNode* node) {
+  // Check if the node is not null
+  if (node) {
+    // Call the displayNode function to print water body and dam information
+    node->displayNode();
+  } else {
+    // Print a message if the node is null
+    cout << "Node is null. No information to display.\n";
+  }
+
 // Inserts a new node into the binary tree based on the parent water body
 TreeNode* insertNode(TreeNode* root, const string& parent, 
                      const string& name, const float& flowRate, const string& type) {
